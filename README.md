@@ -80,6 +80,8 @@ The reason i decided to go with Biff was because i thought it's documentation wa
 
 By default biff uses [babashka](https://github.com/babashka/babashka) as it runner. I really enjoyed it but i had some trouble using certain libs like [Migratus](https://github.com/yogthos/migratus) in it. Because of that, i decided to create a simple migration tool. It woks pretty much the same as migratus. It was really fun doing it because i got to learn a lot about Clojure, how can i create a function, how can i interact with Java and etc.
 
+**You can find this migration tool in the `bb/src` folder. There should be a `migrations` directory.**
+
 **But why you choose Biff if Kit already solves this?** That'll be responded next.
 
 ##### Why i chose Biff and how the project is structured.
