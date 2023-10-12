@@ -20,6 +20,7 @@ purpose).
 ## Solution
 
 **LIVE DEMO**: (Live Demo Link)[https://truenorth-challenge-be2.fly.dev] (Notice that it might take a while for the server to spin up since i'm using a shared instance)
+
 This project is the backend for the calculator. It is a REST API (ONLY) that provides the calculator functionality as well as the user management tooling.
 
 #### Technologies used
