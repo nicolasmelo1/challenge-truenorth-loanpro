@@ -108,11 +108,11 @@ This was fun to do. For the calculator part i created an interpreter. A simple o
 
 ##### About the records
 
-This was also fun to do, i don't know if i understood the idea right or not, but i pretty much implemented. I created a simple endpoint that enables you to filter the way you want, this means you can filter by value with all sorts of filtering. You can filter values in between two values, you can filter by "not in", you can filter by greater than, and less than.
+This was also fun to do, i don't know if i understood the idea right or not, but i pretty much implemented. I created a simple endpoint that enables you to filter the way you want, this means you can filter by value with all sorts of filtering. You can filter values between two values, you can filter by "not in", you can filter by greater than, less than, or, of course, equal to a value.
 
 The sorting was pretty straight forward to do.
 
-Validation: This was the hardest parts to do. I needed to guarantee that the data is properly validated before actually coming to the handler, this way i can guarantee that the data goes correctly to the service. I did this by creating a middleware that validates query params, we validate them together with a Malli schema. This way we can guarantee that the data is validated correctly.
+Validation: This was the hardest part to do. I needed to guarantee that the data is properly validated before actually going to the handler, this way i can guarantee that the data goes correctly to the service. I did this by creating a middleware that validates query params, we validate them together with a Malli schema. This way we can guarantee that the data is validated correctly.
 
 The problem with query params is that they should be flat like:
 
@@ -215,3 +215,5 @@ All apis SHOULD be prefixed with `v1`, it guarantees that it will be versionated
   "search": "string"
 }
 ```
+
+- **_DELETE_** `/v1/records/:id` _(authenticated)_ - Deletes a specific record by id.
