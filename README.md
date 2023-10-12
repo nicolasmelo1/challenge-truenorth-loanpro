@@ -54,13 +54,19 @@ $ cd challenge-truenorth-loanpro-backend
 $ docker compose up
 ```
 
-5. Apply the migrations
+5. Generate the secrets for Biff
+
+```shell
+$ bb generate-secrets
+```
+
+6. Apply the migrations
 
 ```shell
 $ bb run migrate
 ```
 
-6. Run the project
+7. Run the project
 
 ```shell
 $ bb run dev
