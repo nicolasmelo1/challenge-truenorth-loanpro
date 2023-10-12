@@ -11,7 +11,6 @@
             [clojure.tools.namespace.repl :as tn-repl]
             [malli.core :as malc]
             [malli.registry :as malr]
-            [ring.middleware.cors :as cors]
             [nrepl.cmdline :as nrepl-cmd]))
 
 (def plugins
